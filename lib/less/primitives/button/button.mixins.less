@@ -1,0 +1,140 @@
+//========== Mixins
+// Button sizes
+.make-btn3-size(@font-size:false;  @padding-vertical:false; @padding-horizontal:false;) {
+  & when not (@font-size = false) {
+    font-size: @font-size;
+  }
+  & when not (@padding-vertical = false) {
+    padding-top: @padding-vertical;
+    padding-bottom: @padding-vertical;
+  }
+  & when not (@padding-horizontal = false) {
+    padding-left: @padding-horizontal;
+    padding-right: @padding-horizontal;
+  }
+  &.vc_btn3-style-outline {
+    & when not (@padding-vertical = false) {
+      padding-top: @padding-vertical - @vc_btn3-border-outline + @vc_btn3-border-base;
+      padding-bottom: @padding-vertical - @vc_btn3-border-outline + @vc_btn3-border-base;
+    }
+    & when not (@padding-horizontal = false) {
+      padding-left: @padding-horizontal - @vc_btn3-border-outline + @vc_btn3-border-base;
+      padding-right: @padding-horizontal - @vc_btn3-border-outline + @vc_btn3-border-base;
+    }
+  }
+}
+
+
+// Creating Colors
+.vc-make-btn3-color(@text; @background: false; @border: false; @color-hover: false; @background-hover: false; @border-hover: false; ) {
+  color: @text;
+  & when not (@border = false) {
+    border-color: @border;
+  }
+  & when not (@background = false) {
+    background-color: @background;
+  }
+
+  &:hover,
+  &:focus {
+    & when (@color-hover = false) {
+      color: darken(@text, 3%);
+    }
+    & when not (@color-hover = false) {
+      color: @color-hover;
+    }
+    & when not (@border = false) and (@border-hover = false) {
+      border-color: darken(@border, 6%);
+    }
+    & when not (@border-hover = false) {
+      border-color: @border-hover;
+    }
+    & when not (@background = false) and (@background-hover = false) {
+      background-color: darken(@background, 6%);
+    }
+    & when not (@background-hover = false) {
+      background-color: @background-hover;
+    }
+
+  }
+
+  &:active,
+  &.active {
+    & when (@color-hover = false) {
+      color: darken(@text, 5%);
+    }
+    & when not (@color-hover = false) {
+      color: @color-hover;
+    }
+    & when not (@border = false) and (@border-hover = false) {
+      border-color: darken(@border, 8%);
+    }
+    & when not (@border-hover = false) {
+      border-color: @border-hover;
+    }
+    & when not (@background = false) and (@background-hover = false) {
+      background-color: darken(@background, 8%);
+    }
+    & when not (@background-hover = false) {
+      background-color: @background-hover;
+    }
+
+  }
+}
+
+// make colors set
+.vc-btn3-make-colors-set(@selector; @text; @background; @gradient-end;  @gradient; @contrast-color) {
+  &.@{selector} {
+    // Flat (default)
+    &,
+    &.vc_btn3-style-flat {
+      .vc-make-btn3-color(@text: @contrast-color; @background: @background);
+    }
+    // Outline
+    &.vc_btn3-style-outline {
+      .vc-make-btn3-color(@text; @border: @background; @background: transparent; @color-hover: @contrast-color; @background-hover: @background; @border-hover: @background);
+    }
+    // 3d
+    &.vc_btn3-style-3d {
+      .vc-make-btn3-color(@text: @contrast-color; @background: @background; @background-hover: @background);
+
+      box-shadow: 0 @vc_btn3-shadow-width-md-3d 0 darken(@background, 11%);
+      &:hover,
+      &:focus {
+        top: @vc_btn3-shadow-width-md-3d - @vc_btn3-shadow-width-hover;
+        box-shadow: 0 @vc_btn3-shadow-width-hover 0 darken(@background, 11%);
+      }
+      // XS size
+      &.vc_btn3-size-xs {
+        box-shadow: 0 @vc_btn3-shadow-width-xs-3d 0 darken(@background, 11%);
+        &:hover,
+        &:focus {
+          top: @vc_btn3-shadow-width-xs-3d - @vc_btn3-shadow-width-hover;
+          box-shadow: 0 @vc_btn3-shadow-width-hover 0 darken(@background, 11%);
+        }
+      }
+      // SM size
+      &.vc_btn3-size-sm {
+        box-shadow: 0 @vc_btn3-shadow-width-sm-3d 0 darken(@background, 11%);
+        &:hover,
+        &:focus {
+          top: @vc_btn3-shadow-width-sm-3d - @vc_btn3-shadow-width-hover;
+          box-shadow: 0 @vc_btn3-shadow-width-hover 0 darken(@background, 11%);
+        }
+      }
+      // LG size
+      &.vc_btn3-size-lg {
+        box-shadow: 0 @vc_btn3-shadow-width-lg-3d 0 darken(@background, 11%);
+        &:hover,
+        &:focus {
+          top: @vc_btn3-shadow-width-lg-3d - @vc_btn3-shadow-width-hover;
+          box-shadow: 0 @vc_btn3-shadow-width-hover 0 darken(@background, 11%);
+        }
+      }
+    }
+    // Modern
+    &.vc_btn3-style-modern {
+      .vc-make-btn3-color(@text: @contrast-color; @background: @background; @border: @background);
+    }
+  }
+}

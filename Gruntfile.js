@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 	var globalOptions = {
 		browsers: ['> 1%', 'last 3 versions', 'ie 9', 'ie 10'],
 		less: {
-			srcPath: 'lib/less/sandbox/',
+			srcPath: 'lib/less/layers/',
 			srcFiles: [
 				'**/*.init.less'
 			],
