@@ -1,0 +1,22 @@
+*.iml
+
+# Directory-based project format:
+.idea/
+
+# Windows template
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Grunt
+node_modules
+npm-debug.log
+
+# Bower
+assets/lib/bower
+bower_components
+
+# Project files
+assets/
+node_modules/

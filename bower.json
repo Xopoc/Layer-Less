@@ -1,0 +1,47 @@
+{
+  "name": "Visual Composer",
+  "version": "4.3.4",
+  "homepage": "http://vc.wpbakery.com",
+  "authors": [
+    "Michael M, WPBakery"
+  ],
+  "description": "Drag and drop page builder for WordPress. Take full control over your WordPress site, build any layout you can imagine – no programming knowledge required.",
+  "keywords": [
+    "plugin",
+    "wordpress",
+    "visual",
+    "composer"
+  ],
+  "license": "https://wpbakery.atlassian.net/wiki/display/VC/Licensing",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "isotope": "metafizzy/isotope#5f3a2971aceea60ac2873df3b4015af1f2632ea0",
+    "flexslider": "woothemes/FlexSlider#f0e9b4cf3f89ab2a0cd8fb0b7593f81defc02eda",
+    "scrollTo": "flesler/jquery.scrollTo#05035fc5cc591ecdb08c914ec8f231b99af55800",
+    "nivoslider": "gilbitron/Nivo-Slider#09f8e5eae12f2111e5ca480d67634f93efeef1b2",
+    "jquery-ui-tabs-rotate": "cmcculloh/jQuery-UI-Tabs-Rotate#ffa48dd36d85b97127a7aee0567eb5963448245c",
+    "json-js": "douglascrockford/JSON-js#e39db4b7e6249f04a195e7dd0840e610cc9e941e",
+    "progress-circle": "qiao/ProgressCircle.js#afb1e9285ca852856f0eaedd2ee2f28e5292ba7b",
+    "bootstrap3": "twbs/bootstrap#3dd1531d81c90d6d1cf04962032f868d315ab21c",
+    "ace-builds": "ajaxorg/ace-builds#3bfda31096cf3f42b77aac64eb788584ea796822",
+    "animate-css": "daneden/animate.css#a3cf3e6c88e8318b318f8f69c9468940b8aac079",
+    "font-awesome": "FortAwesome/Font-Awesome#a65bd93d81e9e6bd5ebfa41757a4474960b973b4",
+    "twbs-pagination": "esimakin/twbs-pagination#bbb07ecaae9bdb0011a9c4c5de01516b973d7f52",
+    "imagesloaded": "desandro/imagesloaded#b8465933e73bdbf689123c304d9d25986cdedfe1",
+    "masonry": "desandro/masonry#acc718b3c538b02f04395d7951b76952c561c74b",
+    "vcIconPicker": "AngeIII/fontIconPicker#a95adac313fd81255812be54ca649d6b6d5dfd68",
+    "lessjs": "less/less.js#edca7f4cfa97c81e5664ec8ea13a904c9bdf469c",
+    "skrollr": "Prinzhorn/skrollr#^0.6.29"
+  },
+  "resolutions": {
+    "isotope": "5f3a2971aceea60ac2873df3b4015af1f2632ea0",
+    "masonry": "acc718b3c538b02f04395d7951b76952c561c74b"
+  }
+}

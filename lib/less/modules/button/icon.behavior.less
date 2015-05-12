@@ -1,0 +1,122 @@
+
+//========== Core
+.vc_general.vc_btn3 {
+  // icon
+  .vc_btn3-icon {
+    vertical-align: top;
+    height: @vc_btn3-md-font-size;
+    line-height: 1;
+    font-size: @vc_btn3-md-icon-size;
+  }
+  .vc_btn3-icon-inner {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
+}
+
+// icon positions
+.vc_btn3 {
+  &.vc_btn3-icon-left,
+  &.vc_btn3-icon-right {
+    position: relative;
+    .vc_btn3-icon {
+      display: block;
+      position: absolute;
+      top: 50%;
+      .translate(0; -50%);
+    }
+  }
+
+  &.vc_btn3-icon-left {
+    text-align: left;
+  }
+
+  &.vc_btn3-icon-right {
+    text-align: right;
+    &:not(.vc_btn3-block){
+      .vc_btn3-icon-inner {
+        -webkit-transform: translate(-75%, -50%);
+        -ms-transform: translate(-75%, -50%);
+        transform: translate(-75%, -50%);
+      }
+    }
+  }
+
+  &.vc_btn3-o-empty {
+    .vc_btn3-icon {
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+    &:not(.vc_btn3-block) {
+      .vc_btn3-icon-inner {
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+
+
+
+// button sizes
+.vc_btn3 {
+  //========== Sizes
+  // XS size
+  &.vc_btn3-size-xs {
+        .make-btn3-icon-size(@vc_btn3-xs-padding-horizontal, @vc_btn3-xs-icon-size, @vc_btn3-xs-font-size);
+  }
+  // SM size
+  &.vc_btn3-size-sm {
+        .make-btn3-icon-size(@vc_btn3-sm-padding-horizontal, @vc_btn3-sm-icon-size, @vc_btn3-sm-font-size);
+  }
+  // MD size
+  &.vc_btn3-size-md {
+        .make-btn3-icon-size(@vc_btn3-md-padding-horizontal, @vc_btn3-md-icon-size, @vc_btn3-md-font-size);
+  }
+  // LG size
+  &.vc_btn3-size-lg {
+        .make-btn3-icon-size(@vc_btn3-lg-padding-horizontal, @vc_btn3-lg-icon-size, @vc_btn3-lg-font-size);
+  }
+}
+
+
+//========== Positions
+.vc_btn3-container {
+  // Fix for block button
+  &.vc_btn3-center {
+    .vc_btn3-block {
+      &.vc_btn3-icon-left,
+      &.vc_btn3-icon-right {
+        .vc_btn3-icon {
+          display: inline-block;
+          position: initial;
+        }
+        .vc_btn3-icon {
+          -webkit-transform: translate(0, 0);
+          -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+          min-width: 1em;
+        }
+      }
+        &.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
+          .vc_btn3-icon {
+            margin-right: .5em;
+          }
+        }
+        &.vc_btn3-icon-right:not(.vc_btn3-o-empty) {
+          .vc_btn3-icon {
+            margin-left: .5em;
+          }
+        }
+    }
+  }
+}
+

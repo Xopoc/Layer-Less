@@ -1,0 +1,35 @@
+// Background Shape Colors
+.vc_icon_element_shape_color_variants(@selector, @color) {
+  &.vc_icon_element-background-color-@{selector} {
+    &.vc_icon_element-outline {
+      border-color: @color;
+    }
+    &.vc_icon_element-background {
+      background-color: @color;
+    }
+  }
+}
+
+.vc_icon_element_colors_variants(@selector, @text_color) {
+  &.vc_icon_element-color-@{selector} {
+    .vc_icon_element-icon {
+      color: @text_color;
+    }
+  }
+}
+
+// size styles
+.size-(@selector, @size, @font_size) {
+  &.vc_icon_element-size-@{selector} {
+    // fix if no background style selected
+    &.vc_icon_element-have-style-inner {
+      width: @size !important;
+      height: @size !important;
+    }
+    max-width: 100% !important;
+    line-height: @font_size !important;
+    .vc_icon_element-icon {
+      font-size: @font_size !important;
+    }
+  }
+}

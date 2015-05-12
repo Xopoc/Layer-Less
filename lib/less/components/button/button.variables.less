@@ -1,0 +1,143 @@
+/* Button 3
+---------------------------------------------------------- */
+
+//========== Variables
+@vc_btn3-border-radius-round: 2em;
+@vc_btn3-border-radius-rounded: 5px;
+@vc_btn3-border-base: 1px;
+@vc_btn3-border-outline: 2px;
+@vc_btn3-shadow-width-xs-3d: 3px;
+@vc_btn3-shadow-width-sm-3d: 4px;
+@vc_btn3-shadow-width-md-3d: 5px;
+@vc_btn3-shadow-width-lg-3d: 5px;
+@vc_btn3-shadow-width-hover: 2px;
+
+@vc_btn3-color-initial: @blue;
+
+// Button xs
+@vc_btn3-xs-padding-horizontal: 12px;
+@vc_btn3-xs-padding-vertical: 8px;
+@vc_btn3-xs-font-size: 11px;
+//@vc_btn3-xs-icon-size: 14px;
+// Button sm
+@vc_btn3-sm-padding-horizontal: 16px;
+@vc_btn3-sm-padding-vertical: 11px;
+@vc_btn3-sm-font-size: 12px;
+//@vc_btn3-sm-icon-size: 14px;
+// Button md (default)
+@vc_btn3-md-padding-horizontal: 20px;
+@vc_btn3-md-padding-vertical: 14px;
+@vc_btn3-md-font-size: 14px;
+//@vc_btn3-md-icon-size: 16px;
+// Button lg
+@vc_btn3-lg-padding-horizontal: 25px;
+@vc_btn3-lg-padding-vertical: 18px;
+@vc_btn3-lg-font-size: 16px;
+//@vc_btn3-lg-icon-size: 20px;
+
+//====== COLORS
+
+// color set
+// ---------------------------
+// blue
+@vc_btn3-color-blue: @blue;
+@vc_btn3-color-blue-gradient: lighten(@vc_btn3-color-blue, 7%);
+@vc_btn3-color-blue-gradient-end: lighten(@vc_btn3-color-blue, 2%);
+@vc_btn3-color-blue-text: @vc_btn3-color-blue;
+@vc_btn3-color-blue-contrast: #fff;
+// turquoise
+@vc_btn3-color-turquoise: @turquoise;
+@vc_btn3-color-turquoise-gradient: lighten(@vc_btn3-color-turquoise, 4%);
+@vc_btn3-color-turquoise-gradient-end: lighten(@vc_btn3-color-turquoise, 1%);
+@vc_btn3-color-turquoise-text: @vc_btn3-color-turquoise;
+@vc_btn3-color-turquoise-contrast: #fff;
+// pink
+@vc_btn3-color-pink: @pink;
+@vc_btn3-color-pink-gradient: lighten(@vc_btn3-color-pink, 4%);
+@vc_btn3-color-pink-gradient-end: lighten(@vc_btn3-color-pink, 1%);
+@vc_btn3-color-pink-text: @vc_btn3-color-pink;
+@vc_btn3-color-pink-contrast: #fff;
+// violet
+@vc_btn3-color-violet: @violet;
+@vc_btn3-color-violet-gradient: lighten(@vc_btn3-color-violet, 7%);
+@vc_btn3-color-violet-gradient-end: lighten(@vc_btn3-color-violet, 2%);
+@vc_btn3-color-violet-text: @vc_btn3-color-violet;
+@vc_btn3-color-violet-contrast: #fff;
+// peacoc
+@vc_btn3-color-peacoc: @peacoc;
+@vc_btn3-color-peacoc-gradient: lighten(@vc_btn3-color-peacoc, 9%);
+@vc_btn3-color-peacoc-gradient-end: lighten(@vc_btn3-color-peacoc, 2%);
+@vc_btn3-color-peacoc-text: @vc_btn3-color-peacoc;
+@vc_btn3-color-peacoc-contrast: #fff;
+// chino
+@vc_btn3-color-chino: @chino;
+@vc_btn3-color-chino-gradient: lighten(@vc_btn3-color-chino, 7%);
+@vc_btn3-color-chino-gradient-end: lighten(@vc_btn3-color-chino, 3%);
+@vc_btn3-color-chino-text: @vc_btn3-color-chino;
+@vc_btn3-color-chino-contrast: #fff;
+// mulled_wine
+@vc_btn3-color-mulled-wine: @mulled_wine;
+@vc_btn3-color-mulled-wine-gradient: lighten(@vc_btn3-color-mulled-wine, 8%);
+@vc_btn3-color-mulled-wine-gradient-end: lighten(@vc_btn3-color-mulled-wine, 3%);
+@vc_btn3-color-mulled-wine-text: @vc_btn3-color-mulled-wine;
+@vc_btn3-color-mulled-wine-contrast: #fff;
+// vista_blue
+@vc_btn3-color-vista-blue: @vista_blue;
+@vc_btn3-color-vista-blue-gradient: lighten(@vc_btn3-color-vista-blue, 7%);
+@vc_btn3-color-vista-blue-gradient-end: lighten(@vc_btn3-color-vista-blue, 3%);
+@vc_btn3-color-vista-blue-text: @vc_btn3-color-vista-blue;
+@vc_btn3-color-vista-blue-contrast: #fff;
+// orange
+@vc_btn3-color-orange: @orange;
+@vc_btn3-color-orange-gradient: lighten(@vc_btn3-color-orange, 6%);
+@vc_btn3-color-orange-gradient-end: lighten(@vc_btn3-color-orange, 1%);
+@vc_btn3-color-orange-text: @vc_btn3-color-orange;
+@vc_btn3-color-orange-contrast: #fff;
+// sky
+@vc_btn3-color-sky: @sky;
+@vc_btn3-color-sky-gradient: lighten(@vc_btn3-color-sky, 7%);
+@vc_btn3-color-sky-gradient-end: lighten(@vc_btn3-color-sky, 3%);
+@vc_btn3-color-sky-text: @vc_btn3-color-sky;
+@vc_btn3-color-sky-contrast: #fff;
+// green
+@vc_btn3-color-green: @green;
+@vc_btn3-color-green-gradient: lighten(@vc_btn3-color-green, 7%);
+@vc_btn3-color-green-gradient-end: lighten(@vc_btn3-color-green, 3%);
+@vc_btn3-color-green-text: @vc_btn3-color-green;
+@vc_btn3-color-green-contrast: #fff;
+// juicy_pink
+@vc_btn3-color-juicy-pink: @juicy_pink;
+@vc_btn3-color-juicy-pink-gradient: lighten(@vc_btn3-color-juicy-pink, 5%);
+@vc_btn3-color-juicy-pink-gradient-end: lighten(@vc_btn3-color-juicy-pink, 2%);
+@vc_btn3-color-juicy-pink-text: @vc_btn3-color-juicy-pink;
+@vc_btn3-color-juicy-pink-contrast: #fff;
+// sandy_brown
+@vc_btn3-color-sandy-brown: @sandy_brown;
+@vc_btn3-color-sandy-brown-gradient: lighten(@vc_btn3-color-sandy-brown, 6%);
+@vc_btn3-color-sandy-brown-gradient-end: lighten(@vc_btn3-color-sandy-brown, 3%);
+@vc_btn3-color-sandy-brown-text: @vc_btn3-color-sandy-brown;
+@vc_btn3-color-sandy-brown-contrast: #fff;
+// purple
+@vc_btn3-color-purple: @purple;
+@vc_btn3-color-purple-gradient: lighten(@vc_btn3-color-purple, 6%);
+@vc_btn3-color-purple-gradient-end: lighten(@vc_btn3-color-purple, 1%);
+@vc_btn3-color-purple-text: @vc_btn3-color-purple;
+@vc_btn3-color-purple-contrast: #fff;
+// black
+@vc_btn3-color-black: @black;
+@vc_btn3-color-black-gradient: lighten(@vc_btn3-color-black, 8%);
+@vc_btn3-color-black-gradient-end: lighten(@vc_btn3-color-black, 1%);
+@vc_btn3-color-black-text: @vc_btn3-color-black-contrast;
+@vc_btn3-color-black-contrast: #fff;
+// grey
+@vc_btn3-color-grey: @grey;
+@vc_btn3-color-grey-gradient: lighten(@vc_btn3-color-grey, 3%);
+@vc_btn3-color-grey-gradient-end: lighten(@vc_btn3-color-grey, 1%);
+@vc_btn3-color-grey-text: #666;
+@vc_btn3-color-grey-contrast: @vc_btn3-color-grey-text;
+// white
+@vc_btn3-color-white: @white;
+@vc_btn3-color-white-gradient: darken(@vc_btn3-color-white, 1%);
+@vc_btn3-color-white-gradient-end: darken(@vc_btn3-color-white, 2%);
+@vc_btn3-color-white-text: #666;
+@vc_btn3-color-white-contrast: @vc_btn3-color-white-text;
